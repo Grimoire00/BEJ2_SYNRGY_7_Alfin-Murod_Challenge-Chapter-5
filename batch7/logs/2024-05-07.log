@@ -169,7 +169,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [com.binar.batch7.CH4.TASK_CH4.config.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [config.com.binar.batch7.CH5.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -266,7 +266,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [com.binar.batch7.CH4.TASK_CH4.config.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [config.com.binar.batch7.CH5.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -363,7 +363,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [com.binar.batch7.CH4.TASK_CH4.config.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [config.com.binar.batch7.CH5.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -508,7 +508,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [com.binar.batch7.CH4.TASK_CH4.config.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [config.com.binar.batch7.CH5.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
@@ -614,7 +614,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
-Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [com.binar.batch7.CH4.TASK_CH4.config.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'config' for bean class [config.com.binar.batch7.CH5.Config] conflicts with existing, non-compatible bean definition of same name and class [com.binar.batch7.CH4.CH4_Pertemuan4.config.Config]
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
 	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
 	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)

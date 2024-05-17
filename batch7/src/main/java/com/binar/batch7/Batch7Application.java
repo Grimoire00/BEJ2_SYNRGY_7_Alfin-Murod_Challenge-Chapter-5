@@ -1,8 +1,7 @@
 package com.binar.batch7;
 
-import com.binar.batch7.CH4.TASK_CH4.controller.fileupload.FileStorageProperties;
+import com.binar.batch7.CH5.controller.fileupload.FileStorageProperties;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

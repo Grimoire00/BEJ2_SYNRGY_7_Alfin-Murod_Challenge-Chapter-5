@@ -430,11 +430,11 @@ java.lang.ClassNotFoundException: java.text.ListFormat
 	Validation Mode: AUTO
 	Jar files URLs []
 	Managed classes names [
-		com.binar.batch7.CH4.TASK_CH4.entity.Merchant
-		com.binar.batch7.CH4.TASK_CH4.entity.Order
-		com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
-		com.binar.batch7.CH4.TASK_CH4.entity.Product
-		com.binar.batch7.CH4.TASK_CH4.entity.User]
+		entity.com.binar.batch7.CH5.Merchant
+		entity.com.binar.batch7.CH5.Order
+		entity.com.binar.batch7.CH5.OrderDetail
+		entity.com.binar.batch7.CH5.Product
+		entity.com.binar.batch7.CH5.User]
 	Mapping files names []
 	Properties []
 [2024-05-08 00:05:21,049][DEBUG][org.hibernate.integrator.internal.IntegratorServiceImpl][main][51]Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
@@ -720,7 +720,7 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,553][DEBUG][org.hibernate.type.BasicTypeRegistry][main][371]Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
 [2024-05-08 00:05:21,554][DEBUG][org.hibernate.type.spi.TypeConfiguration][main][194]Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@580c17a0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@29d2fa84]
 [2024-05-08 00:05:21,578][DEBUG][org.hibernate.boot.model.relational.Namespace][main][64]Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
-[2024-05-08 00:05:21,594][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: com.binar.batch7.CH4.TASK_CH4.entity.Merchant
+[2024-05-08 00:05:21,594][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: entity.com.binar.batch7.CH5.Merchant
 [2024-05-08 00:05:21,599][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1308]Import with entity name Merchant
 [2024-05-08 00:05:21,600][DEBUG][com.zaxxer.hikari.pool.HikariPool][HikariPool-1 housekeeper][414]HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
 [2024-05-08 00:05:21,601][DEBUG][org.postgresql.Driver][HikariPool-1 connection adder][285]Connecting with URL: jdbc:postgresql://localhost:5432/db_food
@@ -730,13 +730,13 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,601][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][236]Trying to establish a protocol version 3 connection to localhost:5432
 [2024-05-08 00:05:21,602][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][179]Receive Buffer Size is 65,536
 [2024-05-08 00:05:21,602][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][181]Send Buffer Size is 65,536
-[2024-05-08 00:05:21,604][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity com.binar.batch7.CH4.TASK_CH4.entity.Merchant on table merchant
+[2024-05-08 00:05:21,604][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity entity.com.binar.batch7.CH5.Merchant on table merchant
 [2024-05-08 00:05:21,613][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
 [2024-05-08 00:05:21,625][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
-[2024-05-08 00:05:21,626][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Merchant] is safe
-[2024-05-08 00:05:21,626][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Merchant
+[2024-05-08 00:05:21,626][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Merchant] is safe
+[2024-05-08 00:05:21,626][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Merchant
 [2024-05-08 00:05:21,627][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property id with lazy=false
-[2024-05-08 00:05:21,630][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Merchant:id]
+[2024-05-08 00:05:21,630][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Merchant:id]
 [2024-05-08 00:05:21,633][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for id
 [2024-05-08 00:05:21,635][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: merchant.id
 [2024-05-08 00:05:21,635][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property id
@@ -744,51 +744,51 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,639][DEBUG][org.hibernate.boot.model.internal.GeneratorBinder][main][75]#makeIdGenerator(BasicValue([Column(id)]), id, org.hibernate.id.UUIDGenerator, UUID, ...)
 [2024-05-08 00:05:21,640][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`open`')
 [2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property isOpen with lazy=false
-[2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Merchant:isOpen]
+[2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Merchant:isOpen]
 [2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for isOpen
 [2024-05-08 00:05:21,641][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: merchant.open
 [2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property isOpen
 [2024-05-08 00:05:21,641][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`merchant_location`')
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property location with lazy=false
-[2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Merchant:location]
+[2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Merchant:location]
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for location
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: merchant.merchant_location
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property location
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`merchant_name`')
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property name with lazy=false
-[2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Merchant:name]
+[2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Merchant:name]
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for name
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: merchant.merchant_name
 [2024-05-08 00:05:21,642][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property name
 [2024-05-08 00:05:21,643][DEBUG][org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl][main][261]HHH000194: Package not found or wo package-info.java: com.binar.batch7.CH4.TASK_CH4.entity
-[2024-05-08 00:05:21,646][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: com.binar.batch7.CH4.TASK_CH4.entity.Order
+[2024-05-08 00:05:21,646][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: entity.com.binar.batch7.CH5.Order
 [2024-05-08 00:05:21,646][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1308]Import with entity name Order
-[2024-05-08 00:05:21,648][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity com.binar.batch7.CH4.TASK_CH4.entity.Order on table orders
+[2024-05-08 00:05:21,648][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity entity.com.binar.batch7.CH5.Order on table orders
 [2024-05-08 00:05:21,648][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
-[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Order] is safe
-[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Order
+[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Order] is safe
+[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Order
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property id with lazy=false
-[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Order:id]
+[2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Order:id]
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for id
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: orders.id
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property id
 [2024-05-08 00:05:21,651][DEBUG][org.hibernate.boot.model.internal.GeneratorBinder][main][75]#makeIdGenerator(BasicValue([Column(id)]), id, org.hibernate.id.UUIDGenerator, UUID, ...)
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`destination_address`')
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property destinationAddress with lazy=false
-[2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Order:destinationAddress]
+[2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Order:destinationAddress]
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for destinationAddress
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: orders.destination_address
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property destinationAddress
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`completed`')
 [2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property isComplete with lazy=false
-[2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Order:isComplete]
+[2024-05-08 00:05:21,652][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Order:isComplete]
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for isComplete
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: orders.completed
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property isComplete
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`order_time`')
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property orderTime with lazy=false
-[2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Order:orderTime]
+[2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Order:orderTime]
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for orderTime
 [2024-05-08 00:05:21,653][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: orders.order_time
 [2024-05-08 00:05:21,654][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property orderTime
@@ -796,15 +796,15 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,655][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
 [2024-05-08 00:05:21,658][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property user
 [2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl][main][261]HHH000194: Package not found or wo package-info.java: com.binar.batch7.CH4.TASK_CH4.entity
-[2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
+[2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: entity.com.binar.batch7.CH5.OrderDetail
 [2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1308]Import with entity name OrderDetail
-[2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail on table order_detail
+[2024-05-08 00:05:21,659][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity entity.com.binar.batch7.CH5.OrderDetail on table order_detail
 [2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
 [2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
-[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail] is safe
-[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
+[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.OrderDetail] is safe
+[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.OrderDetail
 [2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property id with lazy=false
-[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail:id]
+[2024-05-08 00:05:21,660][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.OrderDetail:id]
 [2024-05-08 00:05:21,661][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for id
 [2024-05-08 00:05:21,661][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: order_detail.id
 [2024-05-08 00:05:21,661][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property id
@@ -823,27 +823,27 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`quantity`')
 [2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property quantity with lazy=false
 [2024-05-08 00:05:21,662][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][179]Receive Buffer Size is 65,536
-[2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail:quantity]
+[2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.OrderDetail:quantity]
 [2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for quantity
 [2024-05-08 00:05:21,662][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][181]Send Buffer Size is 65,536
 [2024-05-08 00:05:21,662][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: order_detail.quantity
 [2024-05-08 00:05:21,662][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property quantity
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`total_price`')
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property totalPrice with lazy=false
-[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail:totalPrice]
+[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.OrderDetail:totalPrice]
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for totalPrice
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: order_detail.total_price
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property totalPrice
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl][main][261]HHH000194: Package not found or wo package-info.java: com.binar.batch7.CH4.TASK_CH4.entity
-[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: com.binar.batch7.CH4.TASK_CH4.entity.Product
+[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: entity.com.binar.batch7.CH5.Product
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1308]Import with entity name Product
-[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity com.binar.batch7.CH4.TASK_CH4.entity.Product on table product
+[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity entity.com.binar.batch7.CH5.Product on table product
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
-[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Product] is safe
-[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Product
+[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Product] is safe
+[2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Product
 [2024-05-08 00:05:21,663][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property id with lazy=false
-[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Product:id]
+[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Product:id]
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for id
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: product.id
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property id
@@ -853,45 +853,45 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property merchant
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`product_name`')
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property name with lazy=false
-[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Product:name]
+[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Product:name]
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for name
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: product.product_name
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property name
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`price`')
 [2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property price with lazy=false
-[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.Product:price]
+[2024-05-08 00:05:21,665][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.Product:price]
 [2024-05-08 00:05:21,666][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for price
 [2024-05-08 00:05:21,666][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: product.price
 [2024-05-08 00:05:21,666][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property price
 [2024-05-08 00:05:21,666][DEBUG][org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl][main][261]HHH000194: Package not found or wo package-info.java: com.binar.batch7.CH4.TASK_CH4.entity
-[2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: com.binar.batch7.CH4.TASK_CH4.entity.User
+[2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][214]Binding entity from annotated class: entity.com.binar.batch7.CH5.User
 [2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1308]Import with entity name User
-[2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity com.binar.batch7.CH4.TASK_CH4.entity.User on table users
+[2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.EntityBinder][main][1857]Bind entity entity.com.binar.batch7.CH5.User on table users
 [2024-05-08 00:05:21,667][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn()
-[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.User] is safe
-[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.User
+[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.User] is safe
+[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.User
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property id with lazy=false
-[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.User:id]
+[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.User:id]
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for id
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: users.id
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property id
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.GeneratorBinder][main][75]#makeIdGenerator(BasicValue([Column(id)]), id, org.hibernate.id.UUIDGenerator, UUID, ...)
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`email_address`')
 [2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property emailAddress with lazy=false
-[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.User:emailAddress]
+[2024-05-08 00:05:21,668][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.User:emailAddress]
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for emailAddress
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: users.email_address
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property emailAddress
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`password`')
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property password with lazy=false
-[2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.User:password]
+[2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.User:password]
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for password
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: users.password
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property password
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AnnotatedColumn][main][261]Binding column: AnnotatedColumn(column='`username`')
 [2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][252]MetadataSourceProcessor property username with lazy=false
-[2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [com.binar.batch7.CH4.TASK_CH4.entity.User:username]
+[2024-05-08 00:05:21,669][DEBUG][org.hibernate.boot.model.internal.AbstractPropertyHolder][main][107]Attempting to locate auto-apply AttributeConverter for property [entity.com.binar.batch7.CH5.User:username]
 [2024-05-08 00:05:21,670][DEBUG][org.hibernate.boot.model.internal.BasicValueBinder][main][1212]building BasicValue for username
 [2024-05-08 00:05:21,670][DEBUG][org.hibernate.mapping.BasicValue][main][294]Skipping column re-registration: users.username
 [2024-05-08 00:05:21,670][DEBUG][org.hibernate.boot.model.internal.PropertyBinder][main][392]Building property username
@@ -919,14 +919,14 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,678][DEBUG][org.hibernate.mapping.PrimaryKey][main][41]Forcing column [id] to be non-null as it is part of the primary key for table [order_detail]
 [2024-05-08 00:05:21,678][DEBUG][org.hibernate.mapping.PrimaryKey][main][41]Forcing column [id] to be non-null as it is part of the primary key for table [product]
 [2024-05-08 00:05:21,678][DEBUG][org.hibernate.mapping.PrimaryKey][main][41]Forcing column [id] to be non-null as it is part of the primary key for table [users]
-[2024-05-08 00:05:21,680][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Order
-[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Product
-[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.User
-[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Merchant
-[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Order
-[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Product
-[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.User
-[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: com.binar.batch7.CH4.TASK_CH4.entity.Merchant
+[2024-05-08 00:05:21,680][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Order
+[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Product
+[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.User
+[2024-05-08 00:05:21,683][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Merchant
+[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Order
+[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Product
+[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.User
+[2024-05-08 00:05:21,695][DEBUG][org.hibernate.boot.internal.InFlightMetadataCollectorImpl][main][1950]Resolving reference to class: entity.com.binar.batch7.CH5.Merchant
 [2024-05-08 00:05:21,700][DEBUG][com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator][HikariPool-1 connection adder][738]HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75f0f8ea
 [2024-05-08 00:05:21,721][DEBUG][org.hibernate.internal.SessionFactoryImpl][main][218]Building session factory
 [2024-05-08 00:05:21,725][DEBUG][org.postgresql.Driver][HikariPool-1 connection adder][285]Connecting with URL: jdbc:postgresql://localhost:5432/db_food
@@ -996,8 +996,8 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,774][DEBUG][org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper][main][449]HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
 [2024-05-08 00:05:21,774][DEBUG][org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper][main][450]HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
 [2024-05-08 00:05:21,774][DEBUG][org.hibernate.validator.internal.engine.ValidatorFactoryConfigurationHelper][main][451]HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-[2024-05-08 00:05:21,774][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Order] is safe
-[2024-05-08 00:05:21,774][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Order
+[2024-05-08 00:05:21,774][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Order] is safe
+[2024-05-08 00:05:21,774][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Order
 [2024-05-08 00:05:21,788][DEBUG][org.postgresql.Driver][HikariPool-1 connection adder][285]Connecting with URL: jdbc:postgresql://localhost:5432/db_food
 [2024-05-08 00:05:21,788][DEBUG][org.postgresql.jdbc.PgConnection][HikariPool-1 connection adder][249]PostgreSQL JDBC Driver 42.6.2
 [2024-05-08 00:05:21,788][DEBUG][org.postgresql.jdbc.PgConnection][HikariPool-1 connection adder][1228]  setDefaultFetchSize = 0
@@ -1005,14 +1005,14 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,788][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][236]Trying to establish a protocol version 3 connection to localhost:5432
 [2024-05-08 00:05:21,789][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][179]Receive Buffer Size is 65,536
 [2024-05-08 00:05:21,790][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][181]Send Buffer Size is 65,536
-[2024-05-08 00:05:21,801][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.User] is safe
-[2024-05-08 00:05:21,801][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.User
-[2024-05-08 00:05:21,803][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Product] is safe
-[2024-05-08 00:05:21,803][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Product
-[2024-05-08 00:05:21,809][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Merchant] is safe
-[2024-05-08 00:05:21,809][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Merchant
-[2024-05-08 00:05:21,812][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail] is safe
-[2024-05-08 00:05:21,812][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
+[2024-05-08 00:05:21,801][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.User] is safe
+[2024-05-08 00:05:21,801][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.User
+[2024-05-08 00:05:21,803][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Product] is safe
+[2024-05-08 00:05:21,803][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Product
+[2024-05-08 00:05:21,809][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Merchant] is safe
+[2024-05-08 00:05:21,809][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Merchant
+[2024-05-08 00:05:21,812][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.OrderDetail] is safe
+[2024-05-08 00:05:21,812][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.OrderDetail
 [2024-05-08 00:05:21,814][DEBUG][org.hibernate.service.internal.SessionFactoryServiceRegistryImpl][main][105]EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
 [2024-05-08 00:05:21,832][DEBUG][com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator][HikariPool-1 connection adder][738]HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34cdf2d1
 [2024-05-08 00:05:21,841][DEBUG][org.hibernate.query.sqm.function.SqmFunctionRegistry][main][90]Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
@@ -1413,10 +1413,10 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:21,975][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][236]Trying to establish a protocol version 3 connection to localhost:5432
 [2024-05-08 00:05:21,977][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][179]Receive Buffer Size is 65,536
 [2024-05-08 00:05:21,977][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][181]Send Buffer Size is 65,536
-[2024-05-08 00:05:22,012][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,012][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,012][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Order] is safe
-[2024-05-08 00:05:22,012][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Order
+[2024-05-08 00:05:22,012][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,012][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,012][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Order] is safe
+[2024-05-08 00:05:22,012][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Order
 [2024-05-08 00:05:22,020][DEBUG][com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator][HikariPool-1 connection adder][738]HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@fe23dc9
 [2024-05-08 00:05:22,038][DEBUG][org.postgresql.Driver][HikariPool-1 connection adder][285]Connecting with URL: jdbc:postgresql://localhost:5432/db_food
 [2024-05-08 00:05:22,038][DEBUG][org.postgresql.jdbc.PgConnection][HikariPool-1 connection adder][249]PostgreSQL JDBC Driver 42.6.2
@@ -1434,40 +1434,40 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:22,101][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][179]Receive Buffer Size is 65,536
 [2024-05-08 00:05:22,101][DEBUG][org.postgresql.core.v3.ConnectionFactoryImpl][HikariPool-1 connection adder][181]Send Buffer Size is 65,536
 [2024-05-08 00:05:22,142][DEBUG][com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator][HikariPool-1 connection adder][738]HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@14fe56d2
-[2024-05-08 00:05:22,160][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [com.binar.batch7.CH4.TASK_CH4.entity.Order]: private accessor [destinationAddress]
+[2024-05-08 00:05:22,160][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [entity.com.binar.batch7.CH5.Order]: private accessor [destinationAddress]
 [2024-05-08 00:05:22,162][DEBUG][com.zaxxer.hikari.pool.HikariPool][HikariPool-1 connection adder][414]HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-[2024-05-08 00:05:22,164][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,181][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.User] is safe
-[2024-05-08 00:05:22,181][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.User
-[2024-05-08 00:05:22,191][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [com.binar.batch7.CH4.TASK_CH4.entity.User]: private accessor [emailAddress]
-[2024-05-08 00:05:22,193][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,193][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,193][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Product] is safe
-[2024-05-08 00:05:22,193][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Product
-[2024-05-08 00:05:22,205][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [com.binar.batch7.CH4.TASK_CH4.entity.Product]: private accessor [merchant]
-[2024-05-08 00:05:22,205][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,206][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.Merchant] is safe
-[2024-05-08 00:05:22,206][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.Merchant
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [com.binar.batch7.CH4.TASK_CH4.entity.Merchant]: private accessor [isOpen]
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail] is safe
-[2024-05-08 00:05:22,215][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
-[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail]: private accessor [order]
-[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
-[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,164][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Order#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,181][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.User] is safe
+[2024-05-08 00:05:22,181][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.User
+[2024-05-08 00:05:22,191][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [entity.com.binar.batch7.CH5.User]: private accessor [emailAddress]
+[2024-05-08 00:05:22,193][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,193][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,193][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Product] is safe
+[2024-05-08 00:05:22,193][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Product
+[2024-05-08 00:05:22,205][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [entity.com.binar.batch7.CH5.Product]: private accessor [merchant]
+[2024-05-08 00:05:22,205][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.Product#merchant` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,206][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.Merchant] is safe
+[2024-05-08 00:05:22,206][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.Merchant
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [entity.com.binar.batch7.CH5.Merchant]: private accessor [isOpen]
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][60]Not known whether passed class name [entity.com.binar.batch7.CH5.OrderDetail] is safe
+[2024-05-08 00:05:22,215][DEBUG][org.hibernate.boot.internal.ClassLoaderAccessImpl][main][62]No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.com.binar.batch7.CH5.OrderDetail
+[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.internal.bytebuddy.BytecodeProviderImpl][main][235]HHH000513: Unable to create the ReflectionOptimizer for [entity.com.binar.batch7.CH5.OrderDetail]: private accessor [order]
+[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#order` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[2024-05-08 00:05:22,225][DEBUG][org.hibernate.bytecode.enhance.spi.interceptor.EnhancementHelper][main][46]To-one property `entity.com.binar.batch7.CH5.OrderDetail#product` was mapped with LAZY + NO_PROXY but the class was not enhanced
 [2024-05-08 00:05:22,242][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess][main][92]Starting post-init callbacks
-[2024-05-08 00:05:22,242][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[com.binar.batch7.CH4.TASK_CH4.entity.Order.user]
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(com.binar.batch7.CH4.TASK_CH4.entity.Order) `staticFetchableList` generator
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(com.binar.batch7.CH4.TASK_CH4.entity.User) `staticFetchableList` generator
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[com.binar.batch7.CH4.TASK_CH4.entity.Product.merchant]
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(com.binar.batch7.CH4.TASK_CH4.entity.Product) `staticFetchableList` generator
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(com.binar.batch7.CH4.TASK_CH4.entity.Merchant) `staticFetchableList` generator
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order]
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product]
-[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail) `staticFetchableList` generator
+[2024-05-08 00:05:22,242][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[entity.com.binar.batch7.CH5.Order.user]
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(entity.com.binar.batch7.CH5.Order) `staticFetchableList` generator
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(entity.com.binar.batch7.CH5.User) `staticFetchableList` generator
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[entity.com.binar.batch7.CH5.Product.merchant]
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(entity.com.binar.batch7.CH5.Product) `staticFetchableList` generator
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(entity.com.binar.batch7.CH5.Merchant) `staticFetchableList` generator
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[entity.com.binar.batch7.CH5.OrderDetail.order]
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : To-one key - NavigableRole[entity.com.binar.batch7.CH5.OrderDetail.product]
+[2024-05-08 00:05:22,245][DEBUG][org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess$PostInitCallbackEntry][main][242]Starting PostInitCallbackEntry : Entity(entity.com.binar.batch7.CH5.OrderDetail) `staticFetchableList` generator
 [2024-05-08 00:05:22,271][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 82
 [2024-05-08 00:05:22,272][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 80
 [2024-05-08 00:05:22,274][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 80
@@ -1510,23 +1510,23 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:22,277][DEBUG][sun.util.logging.internal.LoggingProviderImpl$JULWrapper][RMI TCP Connection(1)-192.168.0.103][230][javax.management.remote.rmi.RMIConnectionImpl@2677a928: connectionId=rmi://192.168.0.103  4] closing.
 [2024-05-08 00:05:22,277][DEBUG][sun.util.logging.internal.LoggingProviderImpl$JULWrapper][RMI TCP Connection(1)-192.168.0.103][230][javax.management.remote.rmi.RMIConnectionImpl@2677a928: connectionId=rmi://192.168.0.103  4] closed.
 [2024-05-08 00:05:22,297][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : o1_0
-[2024-05-08 00:05:22,298][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(com.binar.batch7.CH4.TASK_CH4.entity.Order)] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.Order] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.Order] 
-[2024-05-08 00:05:22,305][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@6a013bdd] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.Order.user] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.Order.user] 
+[2024-05-08 00:05:22,298][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(entity.com.binar.batch7.CH5.Order)] with identifierForTableGroup [entity.com.binar.batch7.CH5.Order] for NavigablePath [entity.com.binar.batch7.CH5.Order]
+[2024-05-08 00:05:22,305][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@6a013bdd] with identifierForTableGroup [entity.com.binar.batch7.CH5.Order.user] for NavigablePath [entity.com.binar.batch7.CH5.Order.user]
 [2024-05-08 00:05:22,305][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : u1_0
 [2024-05-08 00:05:22,311][DEBUG][org.hibernate.sql.results.graph.DomainResultGraphPrinter][main][67]DomainResult Graph:
- \-EntityResultImpl [com.binar.batch7.CH4.TASK_CH4.entity.Order]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Order.destinationAddress]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Order.isComplete]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Order.orderTime]
- |  \-EntityFetchJoinedImpl [com.binar.batch7.CH4.TASK_CH4.entity.Order.user]
+ \-EntityResultImpl [entity.com.binar.batch7.CH5.Order]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Order.destinationAddress]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Order.isComplete]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Order.orderTime]
+ |  \-EntityFetchJoinedImpl [entity.com.binar.batch7.CH5.Order.user]
 
 [2024-05-08 00:05:22,313][DEBUG][org.hibernate.sql.ast.SqlTreePrinter][main][46]SQL AST Tree:
     SelectStatement {
       FromClause {
-        StandardTableGroup (o1 : com.binar.batch7.CH4.TASK_CH4.entity.Order) {
+        StandardTableGroup (o1 : entity.com.binar.batch7.CH5.Order) {
           primaryTableReference : "orders" as o1_0
           TableGroupJoins {
-            left  join LazyTableGroup (u1 : com.binar.batch7.CH4.TASK_CH4.entity.Order.user) {
+            left  join LazyTableGroup (u1 : entity.com.binar.batch7.CH5.Order.user) {
               primaryTableReference : "users" as u1_0
             }
           }
@@ -1534,50 +1534,50 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
       }
     }
 
-[2024-05-08 00:05:22,321][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: com.binar.batch7.CH4.TASK_CH4.entity.Order
+[2024-05-08 00:05:22,321][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: entity.com.binar.batch7.CH5.Order
 [2024-05-08 00:05:22,321][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2997] Version select: select "id" from "orders" where "id"=?
 [2024-05-08 00:05:22,321][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Insert (0): insert into "orders" ("destination_address","completed","order_time","user_id","id") values (?,?,?,?,?)
 [2024-05-08 00:05:22,321][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Update (0): update "orders" set "destination_address"=?,"completed"=?,"order_time"=?,"user_id"=? where "id"=?
 [2024-05-08 00:05:22,321][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Delete (0): delete from "orders" where "id"=?
 [2024-05-08 00:05:22,321][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : u1_0
-[2024-05-08 00:05:22,321][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(com.binar.batch7.CH4.TASK_CH4.entity.User)] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.User] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.User] 
+[2024-05-08 00:05:22,321][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(entity.com.binar.batch7.CH5.User)] with identifierForTableGroup [entity.com.binar.batch7.CH5.User] for NavigablePath [entity.com.binar.batch7.CH5.User]
 [2024-05-08 00:05:22,321][DEBUG][org.hibernate.sql.results.graph.DomainResultGraphPrinter][main][67]DomainResult Graph:
- \-EntityResultImpl [com.binar.batch7.CH4.TASK_CH4.entity.User]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.User.emailAddress]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.User.password]
- |  \-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.User.username]
+ \-EntityResultImpl [entity.com.binar.batch7.CH5.User]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.User.emailAddress]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.User.password]
+ |  \-BasicFetch [entity.com.binar.batch7.CH5.User.username]
 
 [2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.SqlTreePrinter][main][46]SQL AST Tree:
     SelectStatement {
       FromClause {
-        StandardTableGroup (u1 : com.binar.batch7.CH4.TASK_CH4.entity.User) {
+        StandardTableGroup (u1 : entity.com.binar.batch7.CH5.User) {
           primaryTableReference : "users" as u1_0
         }
       }
     }
 
-[2024-05-08 00:05:22,322][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: com.binar.batch7.CH4.TASK_CH4.entity.User
+[2024-05-08 00:05:22,322][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: entity.com.binar.batch7.CH5.User
 [2024-05-08 00:05:22,322][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2997] Version select: select "id" from "users" where "id"=?
 [2024-05-08 00:05:22,322][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Insert (0): insert into "users" ("email_address","password","username","id") values (?,?,?,?)
 [2024-05-08 00:05:22,322][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Update (0): update "users" set "email_address"=?,"password"=?,"username"=? where "id"=?
 [2024-05-08 00:05:22,322][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Delete (0): delete from "users" where "id"=?
 [2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : p1_0
-[2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(com.binar.batch7.CH4.TASK_CH4.entity.Product)] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.Product] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.Product] 
-[2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@16cbba0f] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.Product.merchant] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.Product.merchant] 
+[2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(entity.com.binar.batch7.CH5.Product)] with identifierForTableGroup [entity.com.binar.batch7.CH5.Product] for NavigablePath [entity.com.binar.batch7.CH5.Product]
+[2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@16cbba0f] with identifierForTableGroup [entity.com.binar.batch7.CH5.Product.merchant] for NavigablePath [entity.com.binar.batch7.CH5.Product.merchant]
 [2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : m1_0
 [2024-05-08 00:05:22,322][DEBUG][org.hibernate.sql.results.graph.DomainResultGraphPrinter][main][67]DomainResult Graph:
- \-EntityResultImpl [com.binar.batch7.CH4.TASK_CH4.entity.Product]
- |  +-EntityFetchJoinedImpl [com.binar.batch7.CH4.TASK_CH4.entity.Product.merchant]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Product.name]
- |  \-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Product.price]
+ \-EntityResultImpl [entity.com.binar.batch7.CH5.Product]
+ |  +-EntityFetchJoinedImpl [entity.com.binar.batch7.CH5.Product.merchant]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Product.name]
+ |  \-BasicFetch [entity.com.binar.batch7.CH5.Product.price]
 
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.SqlTreePrinter][main][46]SQL AST Tree:
     SelectStatement {
       FromClause {
-        StandardTableGroup (p1 : com.binar.batch7.CH4.TASK_CH4.entity.Product) {
+        StandardTableGroup (p1 : entity.com.binar.batch7.CH5.Product) {
           primaryTableReference : "product" as p1_0
           TableGroupJoins {
-            left  join LazyTableGroup (m1 : com.binar.batch7.CH4.TASK_CH4.entity.Product.merchant) {
+            left  join LazyTableGroup (m1 : entity.com.binar.batch7.CH5.Product.merchant) {
               primaryTableReference : "merchant" as m1_0
             }
           }
@@ -1585,68 +1585,68 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
       }
     }
 
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: com.binar.batch7.CH4.TASK_CH4.entity.Product
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: entity.com.binar.batch7.CH5.Product
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2997] Version select: select "id" from "product" where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Insert (0): insert into "product" ("merchant_id","product_name","price","id") values (?,?,?,?)
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Update (0): update "product" set "merchant_id"=?,"product_name"=?,"price"=? where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Delete (0): delete from "product" where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : m1_0
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(com.binar.batch7.CH4.TASK_CH4.entity.Merchant)] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.Merchant] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.Merchant] 
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(entity.com.binar.batch7.CH5.Merchant)] with identifierForTableGroup [entity.com.binar.batch7.CH5.Merchant] for NavigablePath [entity.com.binar.batch7.CH5.Merchant]
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.results.graph.DomainResultGraphPrinter][main][67]DomainResult Graph:
- \-EntityResultImpl [com.binar.batch7.CH4.TASK_CH4.entity.Merchant]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Merchant.isOpen]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Merchant.location]
- |  \-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.Merchant.name]
+ \-EntityResultImpl [entity.com.binar.batch7.CH5.Merchant]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Merchant.isOpen]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.Merchant.location]
+ |  \-BasicFetch [entity.com.binar.batch7.CH5.Merchant.name]
 
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.SqlTreePrinter][main][46]SQL AST Tree:
     SelectStatement {
       FromClause {
-        StandardTableGroup (m1 : com.binar.batch7.CH4.TASK_CH4.entity.Merchant) {
+        StandardTableGroup (m1 : entity.com.binar.batch7.CH5.Merchant) {
           primaryTableReference : "merchant" as m1_0
         }
       }
     }
 
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: com.binar.batch7.CH4.TASK_CH4.entity.Merchant
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: entity.com.binar.batch7.CH5.Merchant
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2997] Version select: select "id" from "merchant" where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Insert (0): insert into "merchant" ("open","merchant_location","merchant_name","id") values (?,?,?,?)
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Update (0): update "merchant" set "open"=?,"merchant_location"=?,"merchant_name"=? where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Delete (0): delete from "merchant" where "id"=?
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : od1_0
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail)] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail] 
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@e344f14] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order] 
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [StandardTableGroup(entity.com.binar.batch7.CH5.OrderDetail)] with identifierForTableGroup [entity.com.binar.batch7.CH5.OrderDetail] for NavigablePath [entity.com.binar.batch7.CH5.OrderDetail]
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@e344f14] with identifierForTableGroup [entity.com.binar.batch7.CH5.OrderDetail.order] for NavigablePath [entity.com.binar.batch7.CH5.OrderDetail.order]
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : o1_0
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@2d117280] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order.user] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order.user] 
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@2d117280] with identifierForTableGroup [entity.com.binar.batch7.CH5.OrderDetail.order.user] for NavigablePath [entity.com.binar.batch7.CH5.OrderDetail.order.user]
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : u1_0
-[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@79e9c14] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product] 
+[2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@79e9c14] with identifierForTableGroup [entity.com.binar.batch7.CH5.OrderDetail.product] for NavigablePath [entity.com.binar.batch7.CH5.OrderDetail.product]
 [2024-05-08 00:05:22,323][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : p1_0
-[2024-05-08 00:05:22,324][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@340c7479] with identifierForTableGroup [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product.merchant] for NavigablePath [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product.merchant] 
+[2024-05-08 00:05:22,324][DEBUG][org.hibernate.sql.ast.spi.SimpleFromClauseAccessImpl][main][98]Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@340c7479] with identifierForTableGroup [entity.com.binar.batch7.CH5.OrderDetail.product.merchant] for NavigablePath [entity.com.binar.batch7.CH5.OrderDetail.product.merchant]
 [2024-05-08 00:05:22,324][DEBUG][org.hibernate.sql.ast.spi.SqlAliasBaseImpl][main][33]Created new SQL alias : m1_0
 [2024-05-08 00:05:22,324][DEBUG][org.hibernate.sql.results.graph.DomainResultGraphPrinter][main][67]DomainResult Graph:
- \-EntityResultImpl [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail]
- |  +-EntityFetchJoinedImpl [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order]
- |  +-EntityFetchJoinedImpl [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product]
- |  +-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.quantity]
- |  \-BasicFetch [com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.totalPrice]
+ \-EntityResultImpl [entity.com.binar.batch7.CH5.OrderDetail]
+ |  +-EntityFetchJoinedImpl [entity.com.binar.batch7.CH5.OrderDetail.order]
+ |  +-EntityFetchJoinedImpl [entity.com.binar.batch7.CH5.OrderDetail.product]
+ |  +-BasicFetch [entity.com.binar.batch7.CH5.OrderDetail.quantity]
+ |  \-BasicFetch [entity.com.binar.batch7.CH5.OrderDetail.totalPrice]
 
 [2024-05-08 00:05:22,324][DEBUG][org.hibernate.sql.ast.SqlTreePrinter][main][46]SQL AST Tree:
     SelectStatement {
       FromClause {
-        StandardTableGroup (od1 : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail) {
+        StandardTableGroup (od1 : entity.com.binar.batch7.CH5.OrderDetail) {
           primaryTableReference : "order_detail" as od1_0
           TableGroupJoins {
-            left  join LazyTableGroup (o1 : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order) {
+            left  join LazyTableGroup (o1 : entity.com.binar.batch7.CH5.OrderDetail.order) {
               primaryTableReference : "orders" as o1_0
               TableGroupJoins {
-                left  join LazyTableGroup (u1 : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.order.user) {
+                left  join LazyTableGroup (u1 : entity.com.binar.batch7.CH5.OrderDetail.order.user) {
                   primaryTableReference : "users" as u1_0
                 }
               }
             }
-            left  join LazyTableGroup (p1 : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product) {
+            left  join LazyTableGroup (p1 : entity.com.binar.batch7.CH5.OrderDetail.product) {
               primaryTableReference : "product" as p1_0
               TableGroupJoins {
-                left  join LazyTableGroup (m1 : com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail.product.merchant) {
+                left  join LazyTableGroup (m1 : entity.com.binar.batch7.CH5.OrderDetail.product.merchant) {
                   primaryTableReference : "merchant" as m1_0
                 }
               }
@@ -1656,7 +1656,7 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
       }
     }
 
-[2024-05-08 00:05:22,324][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: com.binar.batch7.CH4.TASK_CH4.entity.OrderDetail
+[2024-05-08 00:05:22,324][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2992]Static SQL for entity: entity.com.binar.batch7.CH5.OrderDetail
 [2024-05-08 00:05:22,324][DEBUG][org.hibernate.persister.entity.AbstractEntityPersister][main][2997] Version select: select "id" from "order_detail" where "id"=?
 [2024-05-08 00:05:22,324][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Insert (0): insert into "order_detail" ("order_id","product_id","quantity","total_price","id") values (?,?,?,?,?)
 [2024-05-08 00:05:22,324][DEBUG][org.jboss.logging.DelegatingBasicLogger][main][393] Update (0): update "order_detail" set "order_id"=?,"product_id"=?,"quantity"=?,"total_price"=? where "id"=?
@@ -1685,7 +1685,7 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:22,519][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
 [2024-05-08 00:05:22,539][DEBUG][org.hibernate.stat.internal.StatisticsInitiator][main][87]Statistics initialized [enabled=false]
 [2024-05-08 00:05:22,543][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,569][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for com.binar.batch7.CH4.TASK_CH4.repository.MerchantRepo…
+[2024-05-08 00:05:22,569][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for repository.com.binar.batch7.CH5.MerchantRepo…
 [2024-05-08 00:05:22,582][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
 [2024-05-08 00:05:22,617][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
 [2024-05-08 00:05:22,629][INFO ][org.springframework.data.jpa.repository.query.QueryEnhancerFactory][main][49]Hibernate is in classpath; If applicable, HQL parser will be used.
@@ -1840,7 +1840,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
 [2024-05-08 00:05:22,642][DEBUG][org.springframework.data.jpa.repository.query.NamedQuery][main][118]Did not find named query Merchant.findAllByIsOpen
 [2024-05-08 00:05:22,643][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,699][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for com.binar.batch7.CH4.TASK_CH4.repository.MerchantRepo.
+[2024-05-08 00:05:22,699][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for repository.com.binar.batch7.CH5.MerchantRepo.
 [2024-05-08 00:05:22,701][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'validasiImplService'
 [2024-05-08 00:05:22,702][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'defaultValidator'
 [2024-05-08 00:05:22,702][DEBUG][org.springframework.beans.factory.support.ConstructorResolver][main][945]Autowiring by type from bean name 'defaultValidator' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2b43529a'
@@ -1873,14 +1873,14 @@ java.lang.Exception: exception just for purpose of providing stack trace
 [2024-05-08 00:05:22,731][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.named-queries#1'
 [2024-05-08 00:05:22,732][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.OrderRepo.fragments#0'
 [2024-05-08 00:05:22,732][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,738][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for com.binar.batch7.CH4.TASK_CH4.repository.OrderRepo…
+[2024-05-08 00:05:22,738][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for repository.com.binar.batch7.CH5.OrderRepo…
 [2024-05-08 00:05:22,739][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,743][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for com.binar.batch7.CH4.TASK_CH4.repository.OrderRepo.
+[2024-05-08 00:05:22,743][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for repository.com.binar.batch7.CH5.OrderRepo.
 [2024-05-08 00:05:22,744][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'userRepo'
 [2024-05-08 00:05:22,745][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.named-queries#4'
 [2024-05-08 00:05:22,746][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.UserRepo.fragments#0'
 [2024-05-08 00:05:22,746][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,747][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for com.binar.batch7.CH4.TASK_CH4.repository.UserRepo…
+[2024-05-08 00:05:22,747][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for repository.com.binar.batch7.CH5.UserRepo…
 [2024-05-08 00:05:22,748][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
 [2024-05-08 00:05:22,751][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
 [2024-05-08 00:05:22,751][DEBUG][org.springframework.data.jpa.repository.query.NamedQuery][main][138]Looking up named query User.existsByUsername
@@ -2109,14 +2109,14 @@ java.lang.Exception: exception just for purpose of providing stack trace
 	at com.binar.batch7.Batch7Application.main(Batch7Application.java:14)
 [2024-05-08 00:05:22,758][DEBUG][org.springframework.data.jpa.repository.query.NamedQuery][main][118]Did not find named query User.existsByEmailAddress
 [2024-05-08 00:05:22,758][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,762][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for com.binar.batch7.CH4.TASK_CH4.repository.UserRepo.
+[2024-05-08 00:05:22,762][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for repository.com.binar.batch7.CH5.UserRepo.
 [2024-05-08 00:05:22,763][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'orderDetailRepo'
 [2024-05-08 00:05:22,765][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.named-queries#0'
 [2024-05-08 00:05:22,765][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'jpa.OrderDetailRepo.fragments#0'
 [2024-05-08 00:05:22,767][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,774][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for com.binar.batch7.CH4.TASK_CH4.repository.OrderDetailRepo…
+[2024-05-08 00:05:22,774][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for repository.com.binar.batch7.CH5.OrderDetailRepo…
 [2024-05-08 00:05:22,774][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,777][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for com.binar.batch7.CH4.TASK_CH4.repository.OrderDetailRepo.
+[2024-05-08 00:05:22,777][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for repository.com.binar.batch7.CH5.OrderDetailRepo.
 [2024-05-08 00:05:22,778][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 82
 [2024-05-08 00:05:22,778][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 80
 [2024-05-08 00:05:22,778][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'productRepo'
@@ -2131,7 +2131,7 @@ java.lang.Exception: exception just for purpose of providing stack trace
 [2024-05-08 00:05:22,781][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@10c489af
 [2024-05-08 00:05:22,781][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@10c489af
 [2024-05-08 00:05:22,781][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
-[2024-05-08 00:05:22,782][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for com.binar.batch7.CH4.TASK_CH4.repository.ProductRepo…
+[2024-05-08 00:05:22,782][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][272]Initializing repository instance for repository.com.binar.batch7.CH5.ProductRepo…
 [2024-05-08 00:05:22,782][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 84
 [2024-05-08 00:05:22,782][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 80
 [2024-05-08 00:05:22,782][DEBUG][org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler][main][310]Creating new EntityManager for shared EntityManager invocation
@@ -2165,7 +2165,7 @@ javax.management.InstanceNotFoundException: org.springframework.boot:type=Admin,
 [2024-05-08 00:05:22,784][DEBUG][sun.rmi.runtime.Log$LoggerLog][RMI TCP Connection(1)-192.168.0.103][228]RMI TCP Connection(1)-192.168.0.103: (port 65486) op = 80
 [2024-05-08 00:05:22,784][DEBUG][sun.util.logging.internal.LoggingProviderImpl$JULWrapper][RMI TCP Connection(1)-192.168.0.103][230][javax.management.remote.rmi.RMIConnectionImpl@63624abe: connectionId=rmi://192.168.0.103  5] closing.
 [2024-05-08 00:05:22,784][DEBUG][sun.util.logging.internal.LoggingProviderImpl$JULWrapper][RMI TCP Connection(1)-192.168.0.103][230][javax.management.remote.rmi.RMIConnectionImpl@63624abe: connectionId=rmi://192.168.0.103  5] closed.
-[2024-05-08 00:05:22,786][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for com.binar.batch7.CH4.TASK_CH4.repository.ProductRepo.
+[2024-05-08 00:05:22,786][DEBUG][org.springframework.data.repository.core.support.RepositoryFactorySupport][main][369]Finished creation of repository instance for repository.com.binar.batch7.CH5.ProductRepo.
 [2024-05-08 00:05:22,788][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'orderMapper'
 [2024-05-08 00:05:22,788][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'productController'
 [2024-05-08 00:05:22,789][DEBUG][org.springframework.beans.factory.support.DefaultSingletonBeanRegistry][main][225]Creating shared instance of singleton bean 'productImplService'
