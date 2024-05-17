@@ -4,6 +4,7 @@ import com.binar.batch7.CH5.dto.BaseResponse;
 import com.binar.batch7.CH5.dto.MerchantRequest;
 import com.binar.batch7.CH5.service.MerchantService;
 import com.binar.batch7.CH5.sp.QuerySPMerchant;
+import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
 
 @RestController
+//@Hidden
 @RequestMapping("api/v1/merchants")
 public class MerchantController {
 

@@ -31,7 +31,7 @@ public class ProductController {
         return ResponseEntity.ok(BaseResponse.success(productService.update(id, request), "Success Update Product"));
     }
 
-    @DeleteMapping(path = "{id}")
+        @DeleteMapping(path = "{id}")
     public ResponseEntity<?> delete(@PathVariable UUID id) {
         return ResponseEntity.ok(BaseResponse.success(productService.delete(id), "Success Delete Product"));
     }
